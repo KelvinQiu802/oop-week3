@@ -8,7 +8,7 @@ public class App {
         a.test();
     }
 
-    void test() {
+    public void test() {
         enemyShips[0] = new Ship(70, 50, 15, 1, false);
         enemyShips[1] = new Ship(90, 50, 20, 1, false);
         enemyShips[2] = new Ship(110, 50, 0, 1, false);
@@ -29,7 +29,7 @@ public class App {
         }
     }
 
-    void removeShip(int index) {
+    public void removeShip(int index) {
         if (index < numberOfEnemies && index >= 0) {
             for (int i = index; i < numberOfEnemies - 1; i++) {
                 enemyShips[i] = enemyShips[i + 1];
