@@ -16,16 +16,13 @@ public class App {
         Bullet b1 = player.fire();
         b1.print();
 
-        System.out.println("Player (" + player.getX() + ", " + player.getY() + ") has " +
-                player.getLives() + " Lives");
+        player.print(0);
         for (int i = 0; i < numberOfEnemies; i++) {
-            System.out.println("Enemy " + i + " located at (" + enemyShips[i].getX() + ", " + enemyShips[i].getY()
-                    + ") has health " + enemyShips[i].getLives());
+            enemyShips[i].print(i);
         }
         removeShip(1);
         for (int i = 0; i < numberOfEnemies; i++) {
-            System.out.println("Enemy " + i + " located at (" + enemyShips[i].getX() + ", " + enemyShips[i].getY()
-                    + ") has health " + enemyShips[i].getLives());
+            enemyShips[i].print(i);
         }
     }
 

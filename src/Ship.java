@@ -30,6 +30,16 @@ public class Ship {
     return false;
   }
 
+  public void print(int index) {
+    if (player) {
+      System.out.println("Player (" + this.x + ", " + this.y + ") has " +
+          this.lives + " Lives");
+    } else {
+      System.out.println("Enemy " + index + " located at (" + this.x + ", " + this.y
+          + ") has health " + this.lives);
+    }
+  }
+
   public int getX() {
     return this.x;
   }
